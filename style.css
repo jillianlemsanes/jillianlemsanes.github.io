@@ -1,0 +1,219 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.header-img{
+    background-image: url("/images/bg-header-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.footer-background{
+    background: whitesmoke;
+    padding: 4rem 0;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copy-right-img{
+    margin-top: 4rem;
+    padding-bottom: 2.5rem;
+    z-index: 1;
+}
+
+.desktop-img{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.devices-img{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.h1-design, .h2-design, .h3-design{
+    color: hsl(210, 10%, 33%);
+}
+
+.access-anywhere-h2{
+    margin-top: 15rem;
+}
+
+.p-design{
+    color: hsl(201, 11%, 66%);
+    line-height: 2rem;
+    margin-bottom: 4rem;
+}
+
+.p-footer{
+    color: hsl(201, 11%, 66%);
+    line-height: 2rem;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 10rem;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 3rem;
+}
+
+.iOS-btn, .Mac-btn{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 .09rem darkslategray;
+    padding: .75rem 2rem;
+    border-radius: 1000px;
+}
+
+.iOS-btn{
+    background: hsl(171, 66%, 44%);
+}
+
+.Mac-btn{
+    background: hsl(233, 100%, 69%);
+}
+
+.iOS-btn:hover, .Mac-btn:hover{
+    opacity: .50;
+    transition: .3;
+}
+
+.col{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+
+.col-2{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.google-img{
+    margin-top: 8rem;
+}
+
+.copy-right-img2{
+    width: 30%;
+    max-width: 50px;
+    padding-bottom: 2rem;
+}
+
+.vector-img{
+    margin-bottom: 8rem;
+}
+
+.social-media-img{
+    padding-top: 2rem;
+}
+
+.social-media-img + .social-media-img{
+    margin-left: 35px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding-top: 1.75rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*small screen buttons*/
+@media (max-width: 399px){
+    .iOS-btn, .Mac-btn{
+        padding: .75rem 2rem;
+        font-size: 1rem;
+    }
+}
+    
+
+@media (min-width:700px){
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img{
+        background-image: url(/images/bg-header-desktop.png);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        width: 100%;
+    }
+
+    li + li{
+        margin-left: 30px;
+    }
+    .img-text-flexbox{
+        justify-content: space-between;
+    }
+
+    .desktop-img{
+        width: 60%;
+    }
+
+    .txt-flexbox{
+        text-align: left;
+        width: 30%;
+    }
+   
+    .col + .col{
+        margin-left: 30px;
+    }
+
+    .col-2{
+        width: 20%;
+        margin: 0;
+    }
+
+    .col-2 + .col-2{
+        margin-left: 30px;
+    }
+
+    .h2-design{
+        margin-top: 8rem;
+    }
+
+    .footer-background{
+        margin: 0;
+        padding: 0;
+    }
+
+    .copy-right-img2{
+        margin-right: 3rem;
+        padding: 0;
+        align-self: center;
+    }
+
+    .col-3{
+        width: 100%;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .col-3 + .col-3{
+        margin-left: 50px;
+    }
+}
